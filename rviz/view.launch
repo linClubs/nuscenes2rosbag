@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="rviz" name ="rviz_nuscenes2bag" type="rviz"
+        respawn="false" output="screen" args="-d $(find nuscenes2bag)/rviz/1.rviz"/>
+</launch>
