@@ -55,6 +55,11 @@ nuscenes/
 2. 将`mini`中`103`场景转成ros包
 
 ~~~python
+# 先source ros工作空间
+source devel/setup.bash
+# 不source会报错Error: package 'nuscenes2bag' not found
+
+# 运行
 rosrun nuscenes2bag nuscenes2bag --scene_number 0061 --dataroot data/nuscenes/ --out nuscenes_bags/
 ~~~
 
@@ -73,6 +78,11 @@ rosrun nuscenes2bag nuscenes2bag --scene_number 0061 --dataroot data/nuscenes/ -
 4. 转换所有`mini`场景数据集 
 
 ~~~python
+# 先source ros工作空间
+source devel/setup.bash
+# 不source会报错Error: package 'nuscenes2bag' not found
+
+# 运行
 rosrun nuscenes2bag nuscenes2bag --dataroot /home/lin/code/maptr2/MapTR/data/nuscenes/ --out nuscenes_bags/ --jobs 4
 ~~~
 
